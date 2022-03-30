@@ -1,0 +1,16 @@
+.progress, .progress-bar {
+    position: fixed;
+    bottom: 15vh;
+}
+
+.progress-bar {
+    background-color: lightseagreen;
+}
+
+.register-pg {
+    height: 100vh;
+}
+
+.question {
+    margin: 20vh 0;
+}
