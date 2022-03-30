@@ -1,0 +1,33 @@
+.hp-img {
+    width:200px;
+    height: 250px;
+    background: lightseagreen url(../../assets/images/woman-desk.png) no-repeat center;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    background-size: cover;
+    border:5px solid lightseagreen;
+    border-radius: 20px;
+}
+
+p.hp {
+    font-size:0.75rem;
+}
+
+.lang-circle {
+    width:50px;
+    border-radius: 50%;
+    border: 5px solid lightgray
+}
+
+.btn {
+    background-color: var(--dark);
+    width:150px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.btn-primary:hover {
+    background-color: lightgray;
+    border: 2px solid white;
+    color: darkslategray;
+}

@@ -1,0 +1,28 @@
+.navbar {
+    background-color: var(--dark);
+
+}
+
+.Header-a {
+    margin: 0 5px;
+}
+
+.Header-a:link, .Header-a:visited {
+    color:antiquewhite;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Header-a:active {
+    color:slategray;
+    text-decoration: none;
+    box-shadow: inset 0px 0px 10px 5px var(--highlight) !important;
+}
+
+
+.clicked {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    box-shadow: inset 0px 0px 10px 5px var(--highlight);
+}

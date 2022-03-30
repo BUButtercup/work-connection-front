@@ -1,5 +1,16 @@
+:root {
+  --dark:#57CC99;
+  --light: rgb(130, 245, 245);
+  --highlight:rgb(130, 245, 245);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  height:100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
