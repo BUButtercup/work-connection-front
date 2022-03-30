@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import { Form, InputGroup, Button, FormControl, CloseButton } from 'react-bootstrap'
 import './style.css'
+import InputObj from '../InputObj'
 
 const WorkExp = (props) => {
     const [workHx, setWorkHx] = useState([])
@@ -21,17 +22,13 @@ const WorkExp = (props) => {
         } else {
             updateItems(workHx, jobValue)
             document.querySelector('form').reset();
-            console.log(workHx)
         }
     }
 
-    const removeItem = e => {
+    const removeJobItem = e => {
         e.preventDefault();
         const selectedJob = e.target.value
-        console.log('clickedjob', selectedJob);
-
         const newJobArr = workHx.filter(job => { return job !== selectedJob })
-        console.log('newarr', newJobArr);
         setWorkHx(newJobArr)
     }
 
@@ -53,10 +50,7 @@ const WorkExp = (props) => {
             </Form>
             <div className="col-9 d-flex flex-wrap job-cont" >
                 {workHx ? workHx.map(job => {
-                    return <div key={job} value={job} className="d-flex justify-content-center align-items-center job-box">
-                        {job}
-                        <CloseButton value={job} variant="white" aria-label="Hide" onClick={removeItem} />
-                    </div>
+                    return <InputObj title={job} removeItem={removeJobItem}/>
                 }) : null}
             </div>
             <Button className="mb-2" variant="primary" onClick={props.handleClick}>Next</Button>
