@@ -1,12 +1,4 @@
-.job-box {
-    min-width: 100px;
-    height: 1.5rem;
-    padding:3px;
-    background-color: lightseagreen;
-    color: white;
-    font-weight: bold;
-    border-radius:10px;
-}
+
 
 .job-cont { 
     height: 100px;

@@ -1,0 +1,10 @@
+.job-box {
+    min-width: 100px;
+    height: 1.5rem;
+    padding:3px;
+    margin:10px;
+    background-color: var(--dark);
+    color: var(--background);
+    font-weight: bold;
+    border-radius:7px;
+}

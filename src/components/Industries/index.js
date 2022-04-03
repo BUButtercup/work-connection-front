@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react'
 import { industries } from '../../assets/data/industries.js'
+import './style.css'
 import { Form, Button } from 'react-bootstrap'
 import InputObj from '../InputObj'
 
@@ -38,12 +39,12 @@ const Industries = (props) => {
                 {jobIndustries ? jobIndustries.map(ind=> {return <option key={ind.id} value={ind.name}>{ind.name}</option>}) : null}
             </Form.Select>
             </Form>
-            <div className="col-9 d-flex flex-wrap job-cont" >
+            <div className="col-9 col-md-6 d-flex flex-wrap job-cont" >
             {indSelect ? indSelect.map(ind => {
                     return (<InputObj title={ind} removeItem={removeInd}/>
             )}) : null}
             </div>
-            <Button className="mb-2" variant="primary" onClick={props.handleClick}>Next</Button>
+            <Button className="mb-2" variant="primary" onClick={props.handleClick} >Next</Button>
         </div>
     )
 }

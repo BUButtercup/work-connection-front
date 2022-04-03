@@ -5,7 +5,6 @@ import InputObj from '../InputObj'
 
 const WorkExp = (props) => {
     const [workHx, setWorkHx] = useState([])
-    let jobArr = []
 
     const updateItems = (arr, el) => {
         if (arr !== []) {
@@ -48,12 +47,12 @@ const WorkExp = (props) => {
                     </Button>
                 </InputGroup>
             </Form>
-            <div className="col-9 d-flex flex-wrap job-cont" >
+            <div className="col-9 col-md-6 d-flex flex-wrap job-cont" >
                 {workHx ? workHx.map(job => {
                     return <InputObj title={job} removeItem={removeJobItem}/>
                 }) : null}
             </div>
-            <Button className="mb-2" variant="primary" onClick={props.handleClick}>Next</Button>
+
         </div>
 
     )

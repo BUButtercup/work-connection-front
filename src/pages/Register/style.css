@@ -1,10 +1,7 @@
-.progress, .progress-bar {
-    position: fixed;
-    bottom: 15vh;
-}
-
-.progress-bar {
-    background-color: lightseagreen;
+.prog-bar {
+    display: flex;
+    /* position: fixed;
+    bottom: 15vh; */
 }
 
 .register-pg {
@@ -13,4 +10,30 @@
 
 .question {
     margin: 20vh 0;
+}
+
+
+/* .btn-primary:active {
+    background-color:var(--mid);
+} */
+
+.dot {
+    width: 10px;
+    height:10px;
+    margin:5px;
+    border: 1px solid lightgray;
+    background-color:var(--light);
+    border-radius:50%;
+}
+.dot-active {
+    background-color:var(--dark);
+    box-shadow: 0 0 5px var(--mid);
+}
+
+.dir-btn {
+    width: 87px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:active:focus, .dir-btn:hover, .dir-btn:active, .dir-btn:active:focus, .dir-btn:focus {
+    background-color:var(--mid);
 }

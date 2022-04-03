@@ -17,9 +17,10 @@ const Homepage = () => {
         <Row className="container-fluid d-flex justify-content-center align-items-center page">
             <div className="m-3 hp-img"></div>
 
-            <h1 className="text-center">Welcome to Robota!</h1>
+            <h1 className="text-center">Welcome to Rovie!</h1>
             <div className="col-12 col-med-8 d-flex flex-column align-items-center">
-                <p className="col-12 col-md-8 text-center hp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et. Eget viverra urna, vestibulum egestas faucibus egestas. Sagittis nam velit volutpat eu nunc.
+                <p className="col-12 col-md-8 text-center hp">Get job-ready in 8 simple steps
+and gain access to the German job market today!
                 </p>
                 <ButtonGroup aria-label="Basic example">
                     <Button data-toggle="button" aria-pressed="false" onClick={()=>navigate('signin')}>Sign In</Button>
