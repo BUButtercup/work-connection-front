@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <Container className="d-flex flex-column align-items-center" fluid>
+    <Container className="d-flex flex-column align-items-center app" fluid>
       {/* <h1>This is App!</h1> */}
       <Header/>
 

@@ -1,0 +1,11 @@
+.check {
+    color: var(--background);
+    visibility: hidden;
+}
+
+.dur-btn:hover .check{
+    visibility: visible;
+}
+.dur-btn:active .check{
+    visibility: visible;
+}

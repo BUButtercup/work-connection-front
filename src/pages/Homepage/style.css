@@ -5,7 +5,7 @@
     /* background-repeat: no-repeat;
     background-position: center; */
     background-size: cover;
-    border:5px solid lightseagreen;
+    border:5px solid var(--dark);
     border-radius: 20px;
 }
 
@@ -16,12 +16,12 @@ p.hp {
 .lang-circle {
     width:50px;
     border-radius: 50%;
-    border: 5px solid lightgray
+    border: 5px solid var(--light)
 }
 
 .btn {
     background-color: var(--dark);
-    width:150px;
+    width:175px;
     font-weight: bold;
     border: 2px solid white;
 }
@@ -30,4 +30,10 @@ p.hp {
     background-color: lightgray;
     border: 2px solid white;
     color: darkslategray;
+}
+
+
+.btn:disabled {
+    background-color: lightgray;
+    border: var(--light)
 }

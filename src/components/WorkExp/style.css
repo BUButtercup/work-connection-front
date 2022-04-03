@@ -1,6 +1,10 @@
-.job-box {
-    width: 150px;
-    background-color: lightseagreen;
-    color: white;
-    font-weight: bold;
+
+
+.job-cont { 
+    height: 100px;
+}
+
+.btn-close {
+    width: 1px;
+    margin-left:5px;
 }

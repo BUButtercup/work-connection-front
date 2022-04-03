@@ -1,11 +1,16 @@
+.app {
+    background-color:var(--background);
+    color: var(--light);
+}
+
 .page {
     margin-top:9vh;
     margin-bottom:15vh;
 }
-
+/* 
 .link-tag{
     
-}
+} */
 
 .link-tag:link, .link-tag:visited {
     color:lightseagreen;
